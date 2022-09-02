@@ -228,12 +228,13 @@ results['hello_and_goodbye'] = results['hello'] & results['goodbye']
 
 
 # Отображение таблицы результатов
-results
+print(results)
 
 
 # Основной набор данных с не пустыми результатами поиска
-df[df['hello'].notna() | 
-   (df['introduce'].notna() & df['introduce']) | 
-   df['manager_name'].notna() | 
-   df['goodbye'].notna() | 
-   df['company_name'].notna()]
+print(df[df['hello'].notna() | 
+     (df['introduce'].notna() & df['introduce']) | 
+      df['manager_name'].notna() | 
+      df['goodbye'].notna() | 
+      df['company_name'].notna()]
+     )
